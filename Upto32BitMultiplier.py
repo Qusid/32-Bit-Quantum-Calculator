@@ -36,4 +36,4 @@ def Multiply(a,b):
   Qc1.measure_all()
   psi = Sampler().run([Qc1], shots=1).result().quasi_dists[0].binary_probabilities()
   results = int(next(iter(psi))[:ls*2+1],2)
-  return results
+  return results ,Qc1.decompose(gates_to_decompose={'Multiplier' , 'Bin Transform'})
