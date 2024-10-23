@@ -1,4 +1,4 @@
-from requirement import *
+from qiskit import QuantumCircuit
 
 def Modifier(a,b):
   n1,n2 = a,b
