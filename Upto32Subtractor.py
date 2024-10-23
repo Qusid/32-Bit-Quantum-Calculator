@@ -23,4 +23,4 @@ def Sub(a,b):
   psi = Sampler().run(Qc1, shots=1).result().quasi_dists[0].binary_probabilities()
   results = int(next(iter(psi))[:ls+1],2)
   if a > b : return results - (2 ** (ls+1))
-  return results
+  return results, Qc1.decompose()
