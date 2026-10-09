@@ -1,4 +1,2 @@
-from qiskit import QuantumCircuit
-from qiskit_aer.primitives import Sampler
-from qiskit import QuantumRegister, ClassicalRegister
-from qiskit.circuit.library import CDKMRippleCarryAdder
+qiskit>=1.0,<2.0
+qiskit-aer>=0.13
